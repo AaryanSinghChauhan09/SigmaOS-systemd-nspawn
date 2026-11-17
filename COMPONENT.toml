@@ -3,7 +3,7 @@ name = "SigmaOS-systemd-nspawn"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "systemd-nspawn component"
+description = "systemd nspawn"
 upstream = []
 
 [contract]
