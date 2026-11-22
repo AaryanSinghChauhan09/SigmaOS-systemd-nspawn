@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-systemd-nspawn Component Wiki
+# SigmaOS-systemd-nspawn Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-systemd-nspawn provides systemd nspawn for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-systemd-nspawn provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-systemd-nspawn Abstraction
-- Fail-Fast on SigmaOS-systemd-nspawn Initialization Errors
-- Deterministic SigmaOS-systemd-nspawn Setup
-- Clear Abstraction Over SigmaOS-systemd-nspawn APIs
-- Composition over Inheritance for SigmaOS-systemd-nspawn extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-systemd-nspawn Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-systemd-nspawn Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-systemd-nspawn Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-systemd-nspawn APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-systemd-nspawn extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-systemd-nspawn follows a SigmaOS-systemd-nspawn pattern:
+SigmaOS-systemd-nspawn follows a SigmaOS-systemd-nspawn pattern:
 - **SigmaOS-systemd-nspawn Core**: Provides SigmaOS-systemd-nspawn support, SigmaOS-systemd-nspawn management, and SigmaOS-systemd-nspawn tracking
 - **Management**: Supports SigmaOS-systemd-nspawn management, SigmaOS-systemd-nspawn configuration, and SigmaOS-systemd-nspawn lifecycle
 - **Tracking**: Supports SigmaOS-systemd-nspawn status, SigmaOS-systemd-nspawn tracking, and SigmaOS-systemd-nspawn lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-systemd-nspawn follows a SigmaOS-systemd-nspawn pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-systemd-nspawn by given configuration
--  - Register a SigmaOS-systemd-nspawn by given name
--  - Get SigmaOS-systemd-nspawn status and SigmaOS-systemd-nspawn availability
--  - Track SigmaOS-systemd-nspawn management and SigmaOS-systemd-nspawn tracking
+- Manage a SigmaOS-systemd-nspawn by given configuration
+- Register a SigmaOS-systemd-nspawn by given name
+- Get SigmaOS-systemd-nspawn status and SigmaOS-systemd-nspawn availability
+- Track SigmaOS-systemd-nspawn management and SigmaOS-systemd-nspawn tracking
 - Error types for SigmaOS-systemd-nspawn failure scenarios or unsupported SigmaOS-systemd-nspawn types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-systemd-nspawn init, SigmaOS-systemd-nspawn management)
 3. **Assert**: Verify the expected SigmaOS-systemd-nspawn results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-systemd-nspawn initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-systemd-nspawn failure scenarios
 - Unit tests provided for SigmaOS-systemd-nspawn management and configuration
